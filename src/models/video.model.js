@@ -39,6 +39,7 @@ const videoSchema = new mongoose.Schema(
   { timeStamps: true }
 );
 
+// Use the mongoose-aggregate-paginate-v2 plugin to enable pagination support for aggregate queries
 videoSchema.plugin(mongooseAggregatePaginate);
 
 export const Video = mongoose.model("Video", videoSchema);
