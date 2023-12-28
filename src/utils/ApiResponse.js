@@ -1,6 +1,6 @@
 class ApiResponse {
   // Constructor function that initializes the properties of the ApiResponse instance
-  constructor(statusCode, data, message) {
+  constructor(statusCode, data, message = "Success") {
     // Property: HTTP status code of the response
     this.statusCode = statusCode;
 
