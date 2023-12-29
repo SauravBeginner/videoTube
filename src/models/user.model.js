@@ -36,7 +36,7 @@ const userSchema = new mongoose.Schema(
     // Define a field for the watch history, referencing the 'Video' model by ObjectId
     watchHistory: [
       {
-        type: mongoose.Schema.Types.ObjectId(),
+        type: mongoose.Schema.Types.ObjectId,
         ref: "Video",
       },
     ],
